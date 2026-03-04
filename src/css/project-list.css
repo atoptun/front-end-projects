@@ -1,0 +1,41 @@
+.page-title {
+  text-align: center;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+}
+
+.project-card {
+  max-width: 300px;
+  border: 1px solid rgb(221 221 221);
+  border-radius: 8px;
+  background: rgb(255 255 255);
+
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgb(0 0 0 / 0.2);
+}
+
+.card-link {
+  display: block;
+  padding: 20px;
+}
+
+.card-image {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.project-title {
+  text-align: center;
+}
