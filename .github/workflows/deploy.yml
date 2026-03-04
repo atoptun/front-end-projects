@@ -2,7 +2,7 @@ name: Build and deploy to GitHub Pages
 
 on:
   push:
-    branches: [front-end-projects] # change to main
+    branches: [main] # change to main
   workflow_dispatch:
 
 permissions:
