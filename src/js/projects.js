@@ -1,9 +1,15 @@
-const metaFiles = import.meta.glob('../projects/**/meta.json', { eager: true, import: 'default' });
-
-const previewImages = import.meta.glob('../projects/**/project-preview.{png,jpg,jpeg,svg,webp,avif}', {
+const metaFiles = import.meta.glob('../projects/**/meta.json', {
   eager: true,
   import: 'default',
 });
+
+const previewImages = import.meta.glob(
+  '../projects/**/project-preview.{png,jpg,jpeg,svg,webp,avif}',
+  {
+    eager: true,
+    import: 'default',
+  }
+);
 
 import defaultPreview from '../img/preview-default.jpg';
 
@@ -16,9 +22,14 @@ const renderCatalog = () => {
     .map(([path, config]) => {
       const projectFolder = path.replace('/meta.json', '');
 
-      const imagePath = config.preview ? `${projectFolder}/${config.preview.replace('./', '')}` : null;
+      const imagePath = config.preview
+        ? `${projectFolder}/${config.preview.replace('./', '')}`
+        : null;
 
-      const previewUrl = imagePath && previewImages[imagePath] ? previewImages[imagePath] : defaultPreview;
+      const previewUrl =
+        imagePath && previewImages[imagePath]
+          ? previewImages[imagePath]
+          : defaultPreview;
 
       const projectUrl = `${projectFolder}/`.replace('../', './');
 

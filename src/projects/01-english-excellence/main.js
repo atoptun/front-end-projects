@@ -14,7 +14,9 @@ if (import.meta.env.DEV) {
     openMobileMenuBtn: document.querySelector('[data-mobile-menu-open]'),
     closeMobileMenuBtn: document.querySelector('[data-mobile-menu-close]'),
     MobileMenu: document.querySelector('[data-mobile-menu]'),
-    mobileMenuLinks: document.querySelectorAll('[data-mobile-menu] a[href^="#"]'),
+    mobileMenuLinks: document.querySelectorAll(
+      '[data-mobile-menu] a[href^="#"]'
+    ),
   };
 
   refs.openMobileMenuBtn.addEventListener('click', toggleMobileMenu);
@@ -74,7 +76,10 @@ function sectionsObserver() {
       header.classList.remove('is-scrolled');
     }
 
-    if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 10) {
+    if (
+      window.innerHeight + window.scrollY >=
+      document.body.offsetHeight - 10
+    ) {
       navLinks.forEach(link => link.classList.remove('current'));
       navLinks[navLinks.length - 1].classList.add('current');
     }
