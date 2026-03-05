@@ -11,7 +11,7 @@ export default defineConfig(({ command }) => {
     define: {
       [command === 'serve' ? 'global' : '_global']: {},
     },
-    base: '/front-end-projects/',
+    base: '/front-end-portfolio/',
     root: 'src',
 
     css: {
