@@ -1,0 +1,370 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Cat house</title>
+
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <load src="../../partials/back-button.html" />
+    <header class="header">
+      <div class="container header-container">
+        <a href="./index.html" class="home-link">
+          <svg class="logo" width="24" height="24">
+            <use href="./images/icons.svg#cat-logo" />
+          </svg>
+          <h1 class="page-title">Котодім</h1>
+        </a>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="container">
+        <section class="section post-section">
+          <h2 class="visually-hidden">Пости</h2>
+          <ul class="post-list">
+            <li class="post-item">
+              <a class="post-link" href="#">
+                <picture>
+                  <source
+                    media="(min-width: 1128px)"
+                    srcset="
+                      ./images/posts/post-1-desktop.jpg    1x,
+                      ./images/posts/post-1-desktop@2x.jpg 2x
+                    "
+                    type="image/jpeg"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/posts/post-1-tablet.jpg    1x,
+                      ./images/posts/post-1-tablet@2x.jpg 2x
+                    "
+                    type="image/jpeg"
+                  />
+                  <img
+                    class="post-img"
+                    src="./images/posts/post-1-mobile.jpg"
+                    srcset="./images/posts/post-1-mobile@2x.jpg 2x"
+                    alt="Коти та їхні чудові навички"
+                  />
+                </picture>
+                <div class="post-overlay">
+                  <h3 class="post-title">
+                    Коти та їхні чудові навички: від полювання до загадкових
+                    здібностей
+                  </h3>
+                </div>
+              </a>
+            </li>
+            <li class="post-item">
+              <a class="post-link" href="#">
+                <picture>
+                  <source
+                    media="(min-width: 1128px)"
+                    srcset="
+                      ./images/posts/post-2-desktop.jpg    1x,
+                      ./images/posts/post-2-desktop@2x.jpg 2x
+                    "
+                    type="image/jpeg"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/posts/post-2-tablet.jpg    1x,
+                      ./images/posts/post-2-tablet@2x.jpg 2x
+                    "
+                    type="image/jpeg"
+                  />
+                  <img
+                    class="post-img"
+                    src="./images/posts/post-2-mobile.jpg"
+                    srcset="./images/posts/post-2-mobile@2x.jpg 2x"
+                    alt="Коти в літературі та мистецтві"
+                  />
+                </picture>
+                <div class="post-overlay">
+                  <h3 class="post-title">
+                    Коти в літературі та мистецтві: від Егіпетських богів до
+                    сучасних майстрів
+                  </h3>
+                </div>
+              </a>
+            </li>
+            <li class="post-item">
+              <a class="post-link" href="#">
+                <picture>
+                  <source
+                    media="(min-width: 1128px)"
+                    srcset="
+                      ./images/posts/post-3-desktop.jpg    1x,
+                      ./images/posts/post-3-desktop@2x.jpg 2x
+                    "
+                    type="image/jpeg"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/posts/post-3-tablet.jpg    1x,
+                      ./images/posts/post-3-tablet@2x.jpg 2x
+                    "
+                    type="image/jpeg"
+                  />
+                  <img
+                    class="post-img"
+                    src="./images/posts/post-3-mobile.jpg"
+                    srcset="./images/posts/post-3-mobile@2x.jpg 2x"
+                    alt="Котячі породи для активних власників"
+                  />
+                </picture>
+                <div class="post-overlay">
+                  <h3 class="post-title">
+                    Котячі породи для активних власників: як вибрати компаньйона
+                  </h3>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </section>
+
+        <div class="longread">
+          <section class="blog">
+            <h2 class="visually-hidden">Блог</h2>
+            <ul class="blog-list">
+              <li class="blog-item">
+                <a class="blog-link" href="#">
+                  <img
+                    class="blog-img"
+                    src="./images/blog/blog-1.jpg"
+                    alt="Найпопулярніші породи котів: який кіт підходить вам?"
+                  />
+                  <div class="blog-wrapper">
+                    <h3 class="blog-title">
+                      Найпопулярніші породи котів: який кіт підходить вам?
+                    </h3>
+                    <p class="blog-text">
+                      Вивчіть найпопулярніші породи котів і їхні особливості,
+                      щоб зробити інформований вибір, який підходить саме вам.
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li class="blog-item">
+                <a class="blog-link" href="#">
+                  <img
+                    class="blog-img"
+                    src="./images/blog/blog-2.jpg"
+                    alt="Як піклуватися про вашого пухнастого друга: догляд за котом"
+                  />
+                  <div class="blog-wrapper">
+                    <h3 class="blog-title">
+                      Як піклуватися про вашого пухнастого друга: догляд за
+                      котом
+                    </h3>
+                    <p class="blog-text">
+                      Дізнайтеся про основні аспекти догляду за котом, включаючи
+                      годування, гігієну та взаємодію з вашим улюбленцем.
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li class="blog-item">
+                <a class="blog-link" href="#">
+                  <img
+                    class="blog-img"
+                    src="./images/blog/blog-3.jpg"
+                    alt="Забавні факти про котів, які вас здивують"
+                  />
+                  <div class="blog-wrapper">
+                    <h3 class="blog-title">
+                      Забавні факти про котів, які вас здивують
+                    </h3>
+                    <p class="blog-text">
+                      Веселі та цікаві факти про котів, які піднімуть вам
+                      настрій та розкажуть про їхні унікальність.
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li class="blog-item">
+                <a class="blog-link" href="#">
+                  <img
+                    class="blog-img"
+                    src="./images/blog/blog-4.jpg"
+                    alt="Історія та культурна значущість котів в усьому світ"
+                  />
+                  <div class="blog-wrapper">
+                    <h3 class="blog-title">
+                      Історія та культурна значущість котів в усьому світ
+                    </h3>
+                    <p class="blog-text">
+                      Вивчіть, як коти впливали на культури різних народів та
+                      дізнайтеся історію спільного життя людей і котів.
+                    </p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </section>
+
+          <section class="socials">
+            <h2 class="section-title">Соцмережі</h2>
+            <ul class="social-list">
+              <li class="social-item">
+                <a
+                  class="social-link"
+                  href="#"
+                  target="_blank"
+                  rel="noopener norefferer"
+                  aria-label="Instagram"
+                >
+                  <span class="social-img">
+                    <svg width="16" height="16">
+                      <use href="./images/icons.svg#instagram" />
+                    </svg>
+                  </span>
+                  <p class="social-numbers">230.000</p>
+                </a>
+              </li>
+              <li class="social-item">
+                <a
+                  class="social-link"
+                  href="#"
+                  target="_blank"
+                  rel="noopener norefferer"
+                  aria-label="Facebook"
+                >
+                  <span class="social-img">
+                    <svg width="16" height="16">
+                      <use href="./images/icons.svg#facebook" />
+                    </svg>
+                  </span>
+                  <p class="social-numbers">230.000</p>
+                </a>
+              </li>
+              <li class="social-item">
+                <a
+                  class="social-link"
+                  href="#"
+                  target="_blank"
+                  rel="noopener norefferer"
+                  aria-label="Youtube"
+                >
+                  <span class="social-img">
+                    <svg width="16" height="16">
+                      <use href="./images/icons.svg#youtube" />
+                    </svg>
+                  </span>
+                  <p class="social-numbers">230.000</p>
+                </a>
+              </li>
+              <li class="social-item">
+                <a
+                  class="social-link"
+                  href="#"
+                  target="_blank"
+                  rel="noopener norefferer"
+                  aria-label="Tik-tok"
+                >
+                  <span class="social-img">
+                    <svg width="16" height="16">
+                      <use href="./images/icons.svg#tiktok" />
+                    </svg>
+                  </span>
+                  <p class="social-numbers">230.000</p>
+                </a>
+              </li>
+              <li class="social-item">
+                <a
+                  class="social-link"
+                  href="#"
+                  target="_blank"
+                  rel="noopener norefferer"
+                  aria-label="Github"
+                >
+                  <span class="social-img">
+                    <svg width="16" height="16">
+                      <use href="./images/icons.svg#github" />
+                    </svg>
+                  </span>
+                  <p class="social-numbers">230.000</p>
+                </a>
+              </li>
+              <li class="social-item">
+                <a
+                  class="social-link"
+                  href="#"
+                  target="_blank"
+                  rel="noopener norefferer"
+                  aria-label="Twitter"
+                >
+                  <span class="social-img">
+                    <svg width="16" height="16">
+                      <use href="./images/icons.svg#twitter" />
+                    </svg>
+                  </span>
+                  <p class="social-numbers">230.000</p>
+                </a>
+              </li>
+            </ul>
+          </section>
+
+          <section class="video">
+            <h2 class="section-title">Відео з пухнастиками</h2>
+            <div class="video-preview-wrapper">
+              <picture>
+                <source
+                  media="(min-width: 1128px)"
+                  srcset="
+                    ./images/video/video-preview-desktop.jpg    1x,
+                    ./images/video/video-preview-desktop@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/video/video-preview-tablet.jpg    1x,
+                    ./images/video/video-preview-tablet@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                />
+
+                <img
+                  class="video-preview"
+                  src="./images/video/video-preview-mobile.jpg"
+                  srcset="./images/video/video-preview-mobile@2x.jpg 2x"
+                  alt="Відео з пухнастиками"
+                />
+              </picture>
+              <div class="video-play-overlay">
+                <svg class="video-play-icon" width="44" height="44">
+                  <use href="./images/icons.svg#video-play" />
+                </svg>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-container">
+        <a href="./index.html" class="home-link">
+          <svg class="logo" width="24" height="24">
+            <use href="./images/icons.svg#cat-logo" />
+          </svg>
+          <h1 class="page-title">Котодім</h1>
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>

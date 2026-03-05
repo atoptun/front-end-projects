@@ -1,5 +1,6 @@
 import { defineConfig } from 'vite';
 import { glob } from 'glob';
+import { resolve } from 'path';
 import injectHTML from 'vite-plugin-html-inject';
 import FullReload from 'vite-plugin-full-reload';
 import SortCss from 'postcss-sort-media-queries';
@@ -20,6 +21,12 @@ export default defineConfig(({ command }) => {
             sort: 'mobile-first',
           }),
         ],
+      },
+    },
+
+    resolve: {
+      alias: {
+        '@css': resolve(__dirname, './src/css'),
       },
     },
 
