@@ -1,0 +1,1459 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Studio</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- LOCAL -->
+    <!-- <link rel="stylesheet" href="./css/modern-normalize.3.0.1.min.css" />
+    <link rel="stylesheet" href="./css/fonts.css" /> -->
+
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+
+  <body>
+    <load src="../../partials/back-button.html" />
+    <header class="page-header">
+      <div class="container header-container">
+        <nav class="header-nav">
+          <a class="logo header-logo" href="./index.html"
+            >Web<span class="logo-part">Studio</span></a
+          >
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a class="nav-link current" href="./index.html">Studio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+
+        <address class="contacts">
+          <ul class="contacts-list">
+            <li class="contacts-item">
+              <a class="contacts-link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li class="contacts-item">
+              <a class="contacts-link" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+          </ul>
+        </address>
+
+        <button
+          class="burger-btn"
+          type="button"
+          aria-label="Open the mobile menu"
+          data-mobile-menu-open
+        >
+          <svg class="burger-icon" width="24" height="24">
+            <use href="./images/icons.svg#burger" />
+          </svg>
+        </button>
+      </div>
+
+      <div class="mobile-menu" data-mobile-menu>
+        <div class="container mobile-menu-container">
+          <button
+            class="mobile-menu-close-btn"
+            type="button"
+            aria-label="Close the mobile menu"
+            data-mobile-menu-close
+          >
+            <svg class="mobile-menu-close-icon" width="8" height="8">
+              <use href="./images/icons.svg#close-modal" />
+            </svg>
+          </button>
+          <nav class="mobile-nav">
+            <ul class="mobile-nav-list">
+              <li class="mobile-nav-item">
+                <a class="mobile-nav-link current" href="./index.html"
+                  >Studio</a
+                >
+              </li>
+              <li class="mobile-nav-item">
+                <a class="mobile-nav-link" href="#portfolio">Portfolio</a>
+              </li>
+              <li class="mobile-nav-item">
+                <a class="mobile-nav-link" href="./index.html">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+
+          <address class="mobile-contacts">
+            <ul class="mobile-contact-list">
+              <li class="mobile-contact-item">
+                <a class="mobile-contact-link" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li class="mobile-contact-item">
+                <a class="mobile-contact-link" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+          </address>
+          <ul class="mobile-social-list">
+            <li class="mobile-social-item">
+              <a
+                class="mobile-social-link"
+                href="https://www.instagram.com"
+                aria-label="Instagram"
+              >
+                <svg class="mobile-social-icon" width="24" height="24">
+                  <use href="./images/icons.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-social-item">
+              <a
+                class="mobile-social-link"
+                href="https://www.twitter.com"
+                aria-label="Twitter"
+              >
+                <svg class="mobile-social-icon" width="24" height="24">
+                  <use href="./images/icons.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-social-item">
+              <a
+                class="mobile-social-link"
+                href="https://www.facebook.com"
+                aria-label="Facebook"
+              >
+                <svg class="mobile-social-icon" width="24" height="24">
+                  <use href="./images/icons.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-social-item">
+              <a
+                class="mobile-social-link"
+                href="https://www.linkedin.com"
+                aria-label="Linkedin"
+              >
+                <svg class="mobile-social-icon" width="24" height="24">
+                  <use href="./images/icons.svg#linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="section hero-section">
+        <div class="container">
+          <h1 class="hero-title">Effective Solutions for Your Business</h1>
+          <button type="button" class="order-button" data-modal-open>
+            Order Service
+          </button>
+        </div>
+      </section>
+
+      <section class="section approach-section">
+        <div class="container">
+          <h2 class="section-header approach-header visually-hidden">
+            Our Approach
+          </h2>
+          <ul class="approach-list">
+            <li class="approach-item">
+              <div class="approach-icon-container">
+                <svg class="approach-icon" width="64" height="64">
+                  <use href="./images/icons.svg#antenna"></use>
+                </svg>
+              </div>
+              <h3 class="approach-title">Strategy</h3>
+              <p class="approach-content">
+                Our goal is to identify the business problem to walk away with
+                the perfect and creative solution.
+              </p>
+            </li>
+            <li class="approach-item">
+              <div class="approach-icon-container">
+                <svg class="approach-icon" width="64" height="64">
+                  <use href="./images/icons.svg#clock"></use>
+                </svg>
+              </div>
+              <h3 class="approach-title">Punctuality</h3>
+              <p class="approach-content">
+                Bring the key message to the brand's audience for the best price
+                within the shortest possible time.
+              </p>
+            </li>
+            <li class="approach-item">
+              <div class="approach-icon-container">
+                <svg class="approach-icon" width="64" height="64">
+                  <use href="./images/icons.svg#diagram"></use>
+                </svg>
+              </div>
+              <h3 class="approach-title">Diligence</h3>
+              <p class="approach-content">
+                Research and confirm brands with the strongest digital growth
+                opportunities and minimize risk.
+              </p>
+            </li>
+            <li class="approach-item">
+              <div class="approach-icon-container">
+                <svg class="approach-icon" width="64" height="64">
+                  <use href="./images/icons.svg#astronaut"></use>
+                </svg>
+              </div>
+              <h3 class="approach-title">Technologies</h3>
+              <p class="approach-content">
+                Design practice focused on digital experiences. We bring forth a
+                deep passion for problem-solving.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section team-section">
+        <div class="container">
+          <h2 class="section-header team-header">Our Team</h2>
+          <ul class="team-list">
+            <li class="team-card">
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/avif/team-img-1.avif    1x,
+                    ./images/team/avif/team-img-1@2x.avif 2x
+                  "
+                  type="image/avif"
+                />
+                <source
+                  srcset="
+                    ./images/team/webp/team-img-1.webp  1x,
+                    images/team/webp/team-img-1@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <img
+                  class="team-photo"
+                  src="./images/team/team-img-1.jpg"
+                  srcset="
+                    ./images/team/team-img-1.jpg    1x,
+                    ./images/team/team-img-1@2x.jpg 2x
+                  "
+                  alt="Mark Guerrero"
+                  width="264"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </picture>
+              <div class="team-content">
+                <h3 class="team-title">Mark Guerrero</h3>
+                <p class="team-position">Product Designer</p>
+                <ul class="member-link-list">
+                  <li class="member-link-item">
+                    <a
+                      class="social-link"
+                      href="https://www.instagram.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="Instagram"
+                    >
+                      <svg class="social-icon" width="16" height="16">
+                        <use href="./images/icons.svg#instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="member-link-item">
+                    <a
+                      href="https://www.x.com/"
+                      class="social-link"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="Twitter"
+                    >
+                      <svg class="social-icon" width="16" height="16">
+                        <use href="./images/icons.svg#twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="member-link-item">
+                    <a
+                      href="https://www.facebook.com/"
+                      class="social-link"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="Facebook"
+                    >
+                      <svg class="social-icon" width="16" height="16">
+                        <use href="./images/icons.svg#facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="member-link-item">
+                    <a
+                      href="https://www.linkedin.com/"
+                      class="social-link"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="Linkedin"
+                    >
+                      <svg class="social-icon" width="16" height="16">
+                        <use href="./images/icons.svg#linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="team-card">
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/avif/team-img-2.avif    1x,
+                    ./images/team/avif/team-img-2@2x.avif 2x
+                  "
+                  type="image/avif"
+                />
+                <source
+                  srcset="
+                    ./images/team/webp/team-img-2.webp  1x,
+                    images/team/webp/team-img-2@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <img
+                  class="team-photo"
+                  src="./images/team/team-img-2.jpg"
+                  srcset="
+                    ./images/team/team-img-2.jpg    1x,
+                    ./images/team/team-img-2@2x.jpg 2x
+                  "
+                  alt="Tom Ford"
+                  width="264"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </picture>
+              <div class="team-content">
+                <h3 class="team-title">Tom Ford</h3>
+                <p class="team-position">Frontend Developer</p>
+                <ul class="member-link-list">
+                  <li class="member-link-item">
+                    <a
+                      href="https://www.instagram.com/"
+                      class="social-link"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="Instagram"
+                    >
+                      <svg class="social-icon" width="16" height="16">
+                        <use href="./images/icons.svg#instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="member-link-item">
+                    <a
+                      href="https://www.x.com/"
+                      class="social-link"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="X.com"
+                    >
+                      <svg class="social-icon" width="16" height="16">
+                        <use href="./images/icons.svg#twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="member-link-item">
+                    <a
+                      href="https://www.facebook.com/"
+                      class="social-link"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="Facebook"
+                    >
+                      <svg class="social-icon" width="16" height="16">
+                        <use href="./images/icons.svg#facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="member-link-item">
+                    <a
+                      href="https://www.linkedin.com/"
+                      class="social-link"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="Linkedin"
+                    >
+                      <svg class="social-icon" width="16" height="16">
+                        <use href="./images/icons.svg#linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="team-card">
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/avif/team-img-3.avif    1x,
+                    ./images/team/avif/team-img-3@2x.avif 2x
+                  "
+                  type="image/avif"
+                />
+                <source
+                  srcset="
+                    ./images/team/webp/team-img-3.webp  1x,
+                    images/team/webp/team-img-3@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <img
+                  class="team-photo"
+                  src="./images/team/team-img-3.jpg"
+                  srcset="
+                    ./images/team/team-img-3.jpg    1x,
+                    ./images/team/team-img-3@2x.jpg 2x
+                  "
+                  alt="Camila Garcia"
+                  width="264"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </picture>
+              <div class="team-content">
+                <h3 class="team-title">Camila Garcia</h3>
+                <p class="team-position">Marketing</p>
+                <ul class="member-link-list">
+                  <li class="member-link-item">
+                    <a
+                      href="https://www.instagram.com/"
+                      class="social-link"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="Instagram"
+                    >
+                      <svg class="social-icon" width="16" height="16">
+                        <use href="./images/icons.svg#instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="member-link-item">
+                    <a
+                      href="https://www.x.com/"
+                      class="social-link"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="X.com"
+                    >
+                      <svg class="social-icon" width="16" height="16">
+                        <use href="./images/icons.svg#twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="member-link-item">
+                    <a
+                      href="https://www.facebook.com/"
+                      class="social-link"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="Facebook"
+                    >
+                      <svg class="social-icon" width="16" height="16">
+                        <use href="./images/icons.svg#facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="member-link-item">
+                    <a
+                      href="https://www.linkedin.com/"
+                      class="social-link"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="Linkedin"
+                    >
+                      <svg class="social-icon" width="16" height="16">
+                        <use href="./images/icons.svg#linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="team-card">
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/avif/team-img-4.avif    1x,
+                    ./images/team/avif/team-img-4@2x.avif 2x
+                  "
+                  type="image/avif"
+                />
+                <source
+                  srcset="
+                    ./images/team/webp/team-img-4.webp  1x,
+                    images/team/webp/team-img-4@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <img
+                  class="team-photo"
+                  src="./images/team/team-img-4.jpg"
+                  srcset="
+                    ./images/team/team-img-4.jpg    1x,
+                    ./images/team/team-img-4@2x.jpg 2x
+                  "
+                  alt="Daniel Wilson"
+                  width="264"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </picture>
+              <div class="team-content">
+                <h3 class="team-title">Daniel Wilson</h3>
+                <p class="team-position">UI Designer</p>
+                <ul class="member-link-list">
+                  <li class="member-link-item">
+                    <a
+                      href="https://www.instagram.com/"
+                      class="social-link"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="Instagram"
+                    >
+                      <svg class="social-icon" width="16" height="16">
+                        <use href="./images/icons.svg#instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="member-link-item">
+                    <a
+                      href="https://www.x.com/"
+                      class="social-link"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="X.com"
+                    >
+                      <svg class="social-icon" width="16" height="16">
+                        <use href="./images/icons.svg#twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="member-link-item">
+                    <a
+                      href="https://www.facebook.com/"
+                      class="social-link"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="Facebook"
+                    >
+                      <svg class="social-icon" width="16" height="16">
+                        <use href="./images/icons.svg#facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="member-link-item">
+                    <a
+                      href="https://www.linkedin.com/"
+                      class="social-link"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="Linkedin"
+                    >
+                      <svg class="social-icon" width="16" height="16">
+                        <use href="./images/icons.svg#linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section portfolio-section" id="portfolio">
+        <div class="container">
+          <h2 class="section-header portfolio-header">Our Portfolio</h2>
+          <ul class="project-list">
+            <li class="project-card">
+              <div class="card-thumb">
+                <picture>
+                  <!-- Desktop -->
+                  <source
+                    srcset="
+                      ./images/portfolio/avif/portfolio-img-1-desktop.avif    1x,
+                      ./images/portfolio/avif/portfolio-img-1-desktop@2x.avif 2x
+                    "
+                    type="image/avif"
+                    media="(min-width: 1158px)"
+                    width="360"
+                    height="300"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/webp/portfolio-img-1-desktop.webp    1x,
+                      ./images/portfolio/webp/portfolio-img-1-desktop@2x.webp 2x
+                    "
+                    type="image/webp"
+                    media="(min-width: 1158px)"
+                    width="360"
+                    height="300"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/portfolio-img-1-desktop.jpg    1x,
+                      ./images/portfolio/portfolio-img-1-desktop@2x.jpg 2x
+                    "
+                    type="image/jpeg"
+                    media="(min-width: 1158px)"
+                    width="360"
+                    height="300"
+                  />
+                  <!-- Tablet -->
+                  <source
+                    srcset="
+                      ./images/portfolio/avif/portfolio-img-1-tablet.avif    1x,
+                      ./images/portfolio/avif/portfolio-img-1-tablet@2x.avif 2x
+                    "
+                    type="image/avif"
+                    media="(min-width: 768px)"
+                    width="356"
+                    height="300"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/webp/portfolio-img-1-tablet.webp    1x,
+                      ./images/portfolio/webp/portfolio-img-1-tablet@2x.webp 2x
+                    "
+                    type="image/webp"
+                    media="(min-width: 768px)"
+                    width="356"
+                    height="300"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/portfolio-img-1-tablet.jpg    1x,
+                      ./images/portfolio/portfolio-img-1-tablet@2x.jpg 2x
+                    "
+                    type="image/jpeg"
+                    media="(min-width: 768px)"
+                    width="356"
+                    height="300"
+                  />
+                  <!-- Mobile -->
+                  <source
+                    srcset="
+                      ./images/portfolio/avif/portfolio-img-1-mobile.avif    1x,
+                      ./images/portfolio/avif/portfolio-img-1-mobile@2x.avif 2x
+                    "
+                    type="image/avif"
+                    media="(max-width: 767px)"
+                    width="288"
+                    height="280"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/webp/portfolio-img-1-mobile.webp    1x,
+                      ./images/portfolio/webp/portfolio-img-1-mobile@2x.webp 2x
+                    "
+                    type="image/webp"
+                    media="(max-width: 767px)"
+                    width="288"
+                    height="280"
+                  />
+
+                  <img
+                    class="team-photo"
+                    src="./images/portfolio/portfolio-img-1-mobile.jpg"
+                    srcset="
+                      ./images/portfolio/portfolio-img-1-mobile.jpg    1x,
+                      ./images/portfolio/portfolio-img-1-mobile@2x.jpg 2x
+                    "
+                    alt="Banking App"
+                    width="288"
+                    height="280"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </picture>
+                <p class="card-text">
+                  14 Stylish and User-Friendly App Design Concepts · Task
+                  Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
+                  · Cloud Storage App
+                </p>
+              </div>
+              <div class="card-content">
+                <h3 class="card-title">Banking App</h3>
+                <p class="card-type">App</p>
+              </div>
+            </li>
+            <li class="project-card">
+              <div class="card-thumb">
+                <picture>
+                  <!-- Desktop -->
+                  <source
+                    srcset="
+                      ./images/portfolio/avif/portfolio-img-2-desktop.avif    1x,
+                      ./images/portfolio/avif/portfolio-img-2-desktop@2x.avif 2x
+                    "
+                    type="image/avif"
+                    media="(min-width: 1158px)"
+                    width="360"
+                    height="300"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/webp/portfolio-img-2-desktop.webp    1x,
+                      ./images/portfolio/webp/portfolio-img-2-desktop@2x.webp 2x
+                    "
+                    type="image/webp"
+                    media="(min-width: 1158px)"
+                    width="360"
+                    height="300"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/portfolio-img-2-desktop.jpg    1x,
+                      ./images/portfolio/portfolio-img-2-desktop@2x.jpg 2x
+                    "
+                    type="image/jpeg"
+                    media="(min-width: 1158px)"
+                    width="360"
+                    height="300"
+                  />
+                  <!-- Tablet -->
+                  <source
+                    srcset="
+                      ./images/portfolio/avif/portfolio-img-2-tablet.avif    1x,
+                      ./images/portfolio/avif/portfolio-img-2-tablet@2x.avif 2x
+                    "
+                    type="image/avif"
+                    media="(min-width: 768px)"
+                    width="356"
+                    height="300"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/webp/portfolio-img-2-tablet.webp    1x,
+                      ./images/portfolio/webp/portfolio-img-2-tablet@2x.webp 2x
+                    "
+                    type="image/webp"
+                    media="(min-width: 768px)"
+                    width="356"
+                    height="300"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/portfolio-img-2-tablet.jpg    1x,
+                      ./images/portfolio/portfolio-img-2-tablet@2x.jpg 2x
+                    "
+                    type="image/jpeg"
+                    media="(min-width: 768px)"
+                    width="356"
+                    height="300"
+                  />
+                  <!-- Mobile -->
+                  <source
+                    srcset="
+                      ./images/portfolio/avif/portfolio-img-2-mobile.avif    1x,
+                      ./images/portfolio/avif/portfolio-img-2-mobile@2x.avif 2x
+                    "
+                    type="image/avif"
+                    media="(max-width: 767px)"
+                    width="288"
+                    height="280"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/webp/portfolio-img-2-mobile.webp    1x,
+                      ./images/portfolio/webp/portfolio-img-2-mobile@2x.webp 2x
+                    "
+                    type="image/webp"
+                    media="(max-width: 767px)"
+                    width="288"
+                    height="280"
+                  />
+
+                  <img
+                    class="team-photo"
+                    src="./images/portfolio/portfolio-img-2-mobile.jpg"
+                    srcset="
+                      ./images/portfolio/portfolio-img-2-mobile.jpg    1x,
+                      ./images/portfolio/portfolio-img-2-mobile@2x.jpg 2x
+                    "
+                    alt="Cashless Payment"
+                    width="288"
+                    height="280"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </picture>
+                <p class="card-text">
+                  14 Stylish and User-Friendly App Design Concepts · Task
+                  Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
+                  · Cloud Storage App
+                </p>
+              </div>
+              <div class="card-content">
+                <h3 class="card-title">Cashless Payment</h3>
+                <p class="card-type">Marketing</p>
+              </div>
+            </li>
+            <li class="project-card">
+              <div class="card-thumb">
+                <picture>
+                  <!-- Desktop -->
+                  <source
+                    srcset="
+                      ./images/portfolio/avif/portfolio-img-3-desktop.avif    1x,
+                      ./images/portfolio/avif/portfolio-img-3-desktop@2x.avif 2x
+                    "
+                    type="image/avif"
+                    media="(min-width: 1158px)"
+                    width="360"
+                    height="300"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/webp/portfolio-img-3-desktop.webp    1x,
+                      ./images/portfolio/webp/portfolio-img-3-desktop@2x.webp 2x
+                    "
+                    type="image/webp"
+                    media="(min-width: 1158px)"
+                    width="360"
+                    height="300"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/portfolio-img-3-desktop.jpg    1x,
+                      ./images/portfolio/portfolio-img-3-desktop@2x.jpg 2x
+                    "
+                    type="image/jpeg"
+                    media="(min-width: 1158px)"
+                    width="360"
+                    height="300"
+                  />
+                  <!-- Tablet -->
+                  <source
+                    srcset="
+                      ./images/portfolio/avif/portfolio-img-3-tablet.avif    1x,
+                      ./images/portfolio/avif/portfolio-img-3-tablet@2x.avif 2x
+                    "
+                    type="image/avif"
+                    media="(min-width: 768px)"
+                    width="356"
+                    height="300"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/webp/portfolio-img-3-tablet.webp    1x,
+                      ./images/portfolio/webp/portfolio-img-3-tablet@2x.webp 2x
+                    "
+                    type="image/webp"
+                    media="(min-width: 768px)"
+                    width="356"
+                    height="300"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/portfolio-img-3-tablet.jpg    1x,
+                      ./images/portfolio/portfolio-img-3-tablet@2x.jpg 2x
+                    "
+                    type="image/jpeg"
+                    media="(min-width: 768px)"
+                    width="356"
+                    height="300"
+                  />
+                  <!-- Mobile -->
+                  <source
+                    srcset="
+                      ./images/portfolio/avif/portfolio-img-3-mobile.avif    1x,
+                      ./images/portfolio/avif/portfolio-img-3-mobile@2x.avif 2x
+                    "
+                    type="image/avif"
+                    media="(max-width: 767px)"
+                    width="288"
+                    height="280"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/webp/portfolio-img-3-mobile.webp    1x,
+                      ./images/portfolio/webp/portfolio-img-3-mobile@2x.webp 2x
+                    "
+                    type="image/webp"
+                    media="(max-width: 767px)"
+                    width="288"
+                    height="280"
+                  />
+
+                  <img
+                    class="team-photo"
+                    src="./images/portfolio/portfolio-img-3-mobile.jpg"
+                    srcset="
+                      ./images/portfolio/portfolio-img-3-mobile.jpg    1x,
+                      ./images/portfolio/portfolio-img-3-mobile@2x.jpg 2x
+                    "
+                    alt="Meditation App"
+                    width="288"
+                    height="280"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </picture>
+                <p class="card-text">
+                  14 Stylish and User-Friendly App Design Concepts · Task
+                  Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
+                  · Cloud Storage App
+                </p>
+              </div>
+              <div class="card-content">
+                <h3 class="card-title">Meditation App</h3>
+                <p class="card-type">App</p>
+              </div>
+            </li>
+            <li class="project-card">
+              <div class="card-thumb">
+                <picture>
+                  <!-- Desktop -->
+                  <source
+                    srcset="
+                      ./images/portfolio/avif/portfolio-img-4-desktop.avif    1x,
+                      ./images/portfolio/avif/portfolio-img-4-desktop@2x.avif 2x
+                    "
+                    type="image/avif"
+                    media="(min-width: 1158px)"
+                    width="360"
+                    height="300"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/webp/portfolio-img-4-desktop.webp    1x,
+                      ./images/portfolio/webp/portfolio-img-4-desktop@2x.webp 2x
+                    "
+                    type="image/webp"
+                    media="(min-width: 1158px)"
+                    width="360"
+                    height="300"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/portfolio-img-4-desktop.jpg    1x,
+                      ./images/portfolio/portfolio-img-4-desktop@2x.jpg 2x
+                    "
+                    type="image/jpeg"
+                    media="(min-width: 1158px)"
+                    width="360"
+                    height="300"
+                  />
+                  <!-- Tablet -->
+                  <source
+                    srcset="
+                      ./images/portfolio/avif/portfolio-img-4-tablet.avif    1x,
+                      ./images/portfolio/avif/portfolio-img-4-tablet@2x.avif 2x
+                    "
+                    type="image/avif"
+                    media="(min-width: 768px)"
+                    width="356"
+                    height="300"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/webp/portfolio-img-4-tablet.webp    1x,
+                      ./images/portfolio/webp/portfolio-img-4-tablet@2x.webp 2x
+                    "
+                    type="image/webp"
+                    media="(min-width: 768px)"
+                    width="356"
+                    height="300"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/portfolio-img-4-tablet.jpg    1x,
+                      ./images/portfolio/portfolio-img-4-tablet@2x.jpg 2x
+                    "
+                    type="image/jpeg"
+                    media="(min-width: 768px)"
+                    width="356"
+                    height="300"
+                  />
+                  <!-- Mobile -->
+                  <source
+                    srcset="
+                      ./images/portfolio/avif/portfolio-img-4-mobile.avif    1x,
+                      ./images/portfolio/avif/portfolio-img-4-mobile@2x.avif 2x
+                    "
+                    type="image/avif"
+                    media="(max-width: 767px)"
+                    width="288"
+                    height="280"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/webp/portfolio-img-4-mobile.webp    1x,
+                      ./images/portfolio/webp/portfolio-img-4-mobile@2x.webp 2x
+                    "
+                    type="image/webp"
+                    media="(max-width: 767px)"
+                    width="288"
+                    height="280"
+                  />
+
+                  <img
+                    class="team-photo"
+                    src="./images/portfolio/portfolio-img-4-mobile.jpg"
+                    srcset="
+                      ./images/portfolio/portfolio-img-4-mobile.jpg    1x,
+                      ./images/portfolio/portfolio-img-4-mobile@2x.jpg 2x
+                    "
+                    alt="Taxi Service"
+                    width="288"
+                    height="280"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </picture>
+                <p class="card-text">
+                  14 Stylish and User-Friendly App Design Concepts · Task
+                  Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
+                  · Cloud Storage App
+                </p>
+              </div>
+              <div class="card-content">
+                <h3 class="card-title">Taxi Service</h3>
+                <p class="card-type">Marketing</p>
+              </div>
+            </li>
+            <li class="project-card">
+              <div class="card-thumb">
+                <picture>
+                  <!-- Desktop -->
+                  <source
+                    srcset="
+                      ./images/portfolio/avif/portfolio-img-5-desktop.avif    1x,
+                      ./images/portfolio/avif/portfolio-img-5-desktop@2x.avif 2x
+                    "
+                    type="image/avif"
+                    media="(min-width: 1158px)"
+                    width="360"
+                    height="300"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/webp/portfolio-img-5-desktop.webp    1x,
+                      ./images/portfolio/webp/portfolio-img-5-desktop@2x.webp 2x
+                    "
+                    type="image/webp"
+                    media="(min-width: 1158px)"
+                    width="360"
+                    height="300"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/portfolio-img-5-desktop.jpg    1x,
+                      ./images/portfolio/portfolio-img-5-desktop@2x.jpg 2x
+                    "
+                    type="image/jpeg"
+                    media="(min-width: 1158px)"
+                    width="360"
+                    height="300"
+                  />
+                  <!-- Tablet -->
+                  <source
+                    srcset="
+                      ./images/portfolio/avif/portfolio-img-5-tablet.avif    1x,
+                      ./images/portfolio/avif/portfolio-img-5-tablet@2x.avif 2x
+                    "
+                    type="image/avif"
+                    media="(min-width: 768px)"
+                    width="356"
+                    height="300"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/webp/portfolio-img-5-tablet.webp    1x,
+                      ./images/portfolio/webp/portfolio-img-5-tablet@2x.webp 2x
+                    "
+                    type="image/webp"
+                    media="(min-width: 768px)"
+                    width="356"
+                    height="300"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/portfolio-img-5-tablet.jpg    1x,
+                      ./images/portfolio/portfolio-img-5-tablet@2x.jpg 2x
+                    "
+                    type="image/jpeg"
+                    media="(min-width: 768px)"
+                    width="356"
+                    height="300"
+                  />
+                  <!-- Mobile -->
+                  <source
+                    srcset="
+                      ./images/portfolio/avif/portfolio-img-5-mobile.avif    1x,
+                      ./images/portfolio/avif/portfolio-img-5-mobile@2x.avif 2x
+                    "
+                    type="image/avif"
+                    media="(max-width: 767px)"
+                    width="288"
+                    height="280"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/webp/portfolio-img-5-mobile.webp    1x,
+                      ./images/portfolio/webp/portfolio-img-5-mobile@2x.webp 2x
+                    "
+                    type="image/webp"
+                    media="(max-width: 767px)"
+                    width="288"
+                    height="280"
+                  />
+
+                  <img
+                    class="team-photo"
+                    src="./images/portfolio/portfolio-img-5-mobile.jpg"
+                    srcset="
+                      ./images/portfolio/portfolio-img-5-mobile.jpg    1x,
+                      ./images/portfolio/portfolio-img-5-mobile@2x.jpg 2x
+                    "
+                    alt="Screen Illustrations"
+                    width="288"
+                    height="280"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </picture>
+                <p class="card-text">
+                  14 Stylish and User-Friendly App Design Concepts · Task
+                  Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
+                  · Cloud Storage App
+                </p>
+              </div>
+              <div class="card-content">
+                <h3 class="card-title">Screen Illustrations</h3>
+                <p class="card-type">Design</p>
+              </div>
+            </li>
+            <li class="project-card">
+              <div class="card-thumb">
+                <picture>
+                  <!-- Desktop -->
+                  <source
+                    srcset="
+                      ./images/portfolio/avif/portfolio-img-6-desktop.avif    1x,
+                      ./images/portfolio/avif/portfolio-img-6-desktop@2x.avif 2x
+                    "
+                    type="image/avif"
+                    media="(min-width: 1158px)"
+                    width="360"
+                    height="300"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/webp/portfolio-img-6-desktop.webp    1x,
+                      ./images/portfolio/webp/portfolio-img-6-desktop@2x.webp 2x
+                    "
+                    type="image/webp"
+                    media="(min-width: 1158px)"
+                    width="360"
+                    height="300"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/portfolio-img-6-desktop.jpg    1x,
+                      ./images/portfolio/portfolio-img-6-desktop@2x.jpg 2x
+                    "
+                    type="image/jpeg"
+                    media="(min-width: 1158px)"
+                    width="360"
+                    height="300"
+                  />
+                  <!-- Tablet -->
+                  <source
+                    srcset="
+                      ./images/portfolio/avif/portfolio-img-6-tablet.avif    1x,
+                      ./images/portfolio/avif/portfolio-img-6-tablet@2x.avif 2x
+                    "
+                    type="image/avif"
+                    media="(min-width: 768px)"
+                    width="356"
+                    height="300"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/webp/portfolio-img-6-tablet.webp    1x,
+                      ./images/portfolio/webp/portfolio-img-6-tablet@2x.webp 2x
+                    "
+                    type="image/webp"
+                    media="(min-width: 768px)"
+                    width="356"
+                    height="300"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/portfolio-img-6-tablet.jpg    1x,
+                      ./images/portfolio/portfolio-img-6-tablet@2x.jpg 2x
+                    "
+                    type="image/jpeg"
+                    media="(min-width: 768px)"
+                    width="356"
+                    height="300"
+                  />
+                  <!-- Mobile -->
+                  <source
+                    srcset="
+                      ./images/portfolio/avif/portfolio-img-6-mobile.avif    1x,
+                      ./images/portfolio/avif/portfolio-img-6-mobile@2x.avif 2x
+                    "
+                    type="image/avif"
+                    media="(max-width: 767px)"
+                    width="288"
+                    height="280"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/webp/portfolio-img-6-mobile.webp    1x,
+                      ./images/portfolio/webp/portfolio-img-6-mobile@2x.webp 2x
+                    "
+                    type="image/webp"
+                    media="(max-width: 767px)"
+                    width="288"
+                    height="280"
+                  />
+
+                  <img
+                    class="team-photo"
+                    src="./images/portfolio/portfolio-img-6-mobile.jpg"
+                    srcset="
+                      ./images/portfolio/portfolio-img-6-mobile.jpg    1x,
+                      ./images/portfolio/portfolio-img-6-mobile@2x.jpg 2x
+                    "
+                    alt="Online Courses"
+                    width="288"
+                    height="280"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </picture>
+                <p class="card-text">
+                  14 Stylish and User-Friendly App Design Concepts · Task
+                  Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
+                  · Cloud Storage App
+                </p>
+              </div>
+              <div class="card-content">
+                <h3 class="card-title">Online Courses</h3>
+                <p class="card-type">Marketing</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <div class="container">
+        <div class="logo-block">
+          <a class="logo footer-logo" href="./index.html"
+            >Web<span class="logo-part">Studio</span></a
+          >
+          <p class="footer-text">
+            Increase the flow of customers and sales for your business with
+            digital marketing & growth solutions.
+          </p>
+        </div>
+        <div class="social-block">
+          <p class="social-title">Social media</p>
+          <ul class="social-list">
+            <li class="social-item">
+              <a
+                href="https://www.instagram.com/"
+                class="social-link"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+              >
+                <svg class="social-icon" width="24" height="24">
+                  <use href="./images/icons.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-item">
+              <a
+                href="https://www.x.com/"
+                class="social-link"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="X.com"
+              >
+                <svg class="social-icon" width="24" height="24">
+                  <use href="./images/icons.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-item">
+              <a
+                href="https://www.facebook.com/"
+                class="social-link"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Facebook"
+              >
+                <svg class="social-icon" width="24" height="24">
+                  <use href="./images/icons.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-item">
+              <a
+                href="https://www.linkedin.com/"
+                class="social-link"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Linkedin"
+              >
+                <svg class="social-icon" width="24" height="24">
+                  <use href="./images/icons.svg#linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="subscibe-block">
+          <p class="subscribe-title">Subscribe</p>
+          <form action="index.html" method="get" class="subscribe-form">
+            <label
+              class="subscribe-user-email-label visually-hidden"
+              for="subscribe_user_email"
+            >
+              User email
+            </label>
+            <input
+              type="email"
+              name="user_email"
+              id="subscribe_user_email"
+              class="subscribe-email"
+              placeholder="E-mail"
+              spellcheck="false"
+            />
+            <button class="subscribe-btn" type="submit">
+              Subscribe
+              <svg class="icon" width="24" height="24">
+                <use href="./images/icons.svg#telegram"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </footer>
+
+    <div class="backdrop" data-modal>
+      <div class="modal" data-modal-content>
+        <button
+          class="modal-close-btn"
+          type="button"
+          aria-label="Close"
+          data-modal-close
+        >
+          <svg class="icon" width="8" height="8">
+            <use href="./images/icons.svg#close-modal"></use>
+          </svg>
+        </button>
+        <p class="form-caption">
+          Leave your contacts and we will call you back
+        </p>
+        <form action="index.html" method="get" class="modal-form">
+          <div class="field">
+            <label for="user-name" class="field-label">Name</label>
+            <div class="field-input">
+              <input type="text" name="user-name" id="user-name" />
+              <svg class="icon" width="18" height="24">
+                <use href="./images/icons.svg#person"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="field">
+            <label for="user_phone" class="field-label">Phone</label>
+            <div class="field-input">
+              <input type="tel" name="user_phone" id="user_phone" />
+              <svg class="icon" width="18" height="24">
+                <use href="./images/icons.svg#phone"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="field">
+            <label for="user_email" class="field-label">Email</label>
+            <div class="field-input">
+              <input type="email" name="user_email" id="user_email" />
+              <svg class="icon" width="18" height="24">
+                <use href="./images/icons.svg#email"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="field comment">
+            <label for="user-comment" class="field-label">Comment</label>
+            <!-- <div class="field-input"> -->
+            <textarea
+              class="user-comment"
+              name="user-comment"
+              id="user-comment"
+              placeholder="Text input"
+            ></textarea>
+            <!-- </div> -->
+          </div>
+          <div class="field privacy">
+            <!-- <div class="field-checkbox"> -->
+            <input
+              type="checkbox"
+              class="user-privacy visually-hidden"
+              name="user-privacy"
+              id="user-privacy"
+              value="true"
+            />
+            <label for="user-privacy" class="field-label field-label-privacy">
+              <span class="checkbox">
+                <svg class="icon" width="10" height="8">
+                  <use href="./images/icons.svg#checkbox"></use>
+                </svg>
+              </span>
+              <span class="text">
+                I accept the terms and conditions of the
+                <a class="link" href="">Privacy Policy</a>
+              </span>
+            </label>
+            <!-- </div> -->
+          </div>
+          <button type="submit" class="submit-btn">Send</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
+  </body>
+</html>
