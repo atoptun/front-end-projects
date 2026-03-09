@@ -1,0 +1,26 @@
+@use 'sass:color';
+@use 'sass:list';
+@use '../variables' as var;
+
+
+@if list.index(var.$btn-types, default) {
+  /* == Default == */
+  .btn--default {
+    background-color: #92929d;
+
+    &:active {
+      background-color: color.adjust(#92929d, $lightness: -10%);
+    }
+
+    @media (hover: hover) {
+      &:hover,
+      &:focus {
+        background-color: color.adjust(#92929d, $lightness: 10%);
+      }
+    }
+
+    &[disabled] {
+      background-color: #b5b5be;
+    }
+  }
+}
